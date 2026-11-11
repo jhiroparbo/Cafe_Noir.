@@ -1,0 +1,211 @@
+/* CHECKOUT PAGE */
+.checkout-page {
+    max-width: 850px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #fffaf3;
+    border-radius: 8px;
+}
+
+.checkout-page h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #4b3022;
+    margin-bottom: 25px;
+}
+
+.checkout-page h2 {
+    color: #6f4e37;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* HEADING ALIGNMENT */
+
+.checkout-page h2:first-of-type {
+    text-align: center;
+}
+
+.checkout-page h2:nth-of-type(2) {
+    text-align: right;
+}
+
+.checkout-page h2:nth-of-type(3) {
+    text-align: center;
+}
+
+/* PROGRESS INDICATOR */
+
+.checkout-page .progress-container {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.progress-step {
+    min-width: 65px;
+    text-align: center;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #555;
+    border: none;
+    font-size: 14px;
+}
+
+.progress-step.completed .step-circle,
+.progress-step.active .step-circle {
+    background-color: #6f4e37;
+    color: white;
+}
+
+.progress-step p {
+    font-size: 11px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.progress-step.active p {
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+.progress-line {
+    flex: 1;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: -18px;
+}
+
+.progress-line.completed {
+    background-color: #6f4e37;
+}
+
+/* ORDER SUMMARY */
+#orderSummary {
+    padding: 12px;
+    border: 1px solid #d6c2ad;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#orderSummary p {
+    font-size: 14px;
+}
+
+/* CUSTOMER INFORMATION */
+#checkoutForm label {
+    display: block;
+    margin: 12px 0 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4b3022;
+}
+
+#checkoutForm input {
+    width: 100%;
+    padding: 11px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+#checkoutForm input:focus {
+    border-color: #6f4e37;
+}
+
+/* BUTTONS */
+.checkout-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.back-button,
+.continue-button {
+    width: 50%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button {
+    background-color: white;
+    color: #222;
+    border: 1px solid #333;
+}
+
+.continue-button {
+    background-color: #111;
+    color: white;
+    border: 1px solid #111;
+}
+
+.back-button:hover {
+    background-color: #eee;
+}
+
+.continue-button:hover {
+    background-color: #4b3022;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .checkout-page {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .checkout-page .progress-container {
+        padding: 0 5px;
+    }
+
+    .progress-step {
+        min-width: 48px;
+    }
+
+    .progress-step p {
+        font-size: 9px;
+    }
+
+    .step-circle {
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+    }
+
+    .checkout-buttons {
+        gap: 15px;
+    }
+
+    .back-button,
+    .continue-button {
+        width: 50%;
+        height: 42px;
+    }
+}

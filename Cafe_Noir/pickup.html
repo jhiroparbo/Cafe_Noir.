@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/icon.png">
+        <link rel="stylesheet" href="css/headerFooter.css">
+        <link rel="stylesheet" href="css/pickup.css">
+        <title>Pickup - Cafe Noir</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Cafe Noir Logo">
+                <div class="logo-text">
+                    <h1>CAFE NOIR</h1>
+                    <p>SIP THE DARK SIDE</p>
+                </div>
+            </div>
+    
+            <nav>
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="login.html">LOGIN</a>
+                <a href="cart.html" class="cart-link">
+                    <img src="images/cart.png" class="cart" alt="Cart">
+                    <span id="cartCount">0</span>
+                </a>
+            </nav>
+        </header>
+    
+        <main class="pickup-page">
+            <div class="progress-container">
+                <div class="progress-step completed">
+                    <div class="step-circle">✓</div>
+                    <p>Cart</p>
+                </div>
+    
+                <div class="progress-line completed"></div>
+    
+                <div class="progress-step completed">
+                    <div class="step-circle">✓</div>
+                    <p>Checkout</p>
+                </div>
+    
+                <div class="progress-line completed"></div>
+    
+                <div class="progress-step active">
+                    <div class="step-circle">3</div>
+                    <p>Pick-up Time</p>
+                </div>
+    
+                <div class="progress-line"></div>
+    
+                <div class="progress-step">
+                    <div class="step-circle">4</div>
+                    <p>Payment</p>
+                </div>
+    
+                <div class="progress-line"></div>
+    
+                <div class="progress-step">
+                    <div class="step-circle">5</div>
+                    <p>Confirmation</p>
+                </div>
+            </div>
+    
+            <h1>CHOOSE PICK-UP TIME</h1>
+    
+            <p class="pickup-description">
+                Select your preferred time (minimum 10 minutes ahead).
+            </p>
+    
+            <form id="pickupForm">
+                <div class="pickup-row">
+                    <label for="pickupDate">DATE</label>
+                    <input type="date" id="pickupDate" required>
+                </div>
+
+                <div class="pickup-row">
+                    <label for="pickupTime">TIME</label>
+                    <input type="time" id="pickupTime" required>
+                </div>
+
+                <p id="availableTime" class="pickup-note"></p>
+
+                <div class="pickup-buttons">
+                    <a href="checkout.html" class="back-button">
+                        BACK
+                    </a>
+                    <button type="submit" class="button">
+                        CONTINUE
+                    </button>
+                </div>
+            </form>
+        </main>
+    
+        <footer>
+            <h3>CAFE NOIR</h3>
+            <p>© 2026 Cafe Noir. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1QPphXe6Kz" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/noir_ndbean?obrf=Nm51czI0bm1wdG5o" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+        <script src="javaScipt/pickup.js"></script>
+        <script src="javaScipt/cartCounter.js"></script>
+    </body>
+</html>

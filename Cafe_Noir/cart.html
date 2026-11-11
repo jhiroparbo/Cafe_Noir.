@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/png" href="images/icon.png">
+        <link rel="stylesheet" href="css/headerFooter.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <title>Cart - Cafe Noir</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Cafe Noir Logo">
+                <div class="logo-text">
+                    <h1>CAFE NOIR</h1>
+                    <p>SIP THE DARK SIDE</p>
+                </div>
+            </div>
+            
+            <nav>
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="login.html">LOGIN</a>
+                <a href="cart.html" class="cart-link">
+                    <img src="images/cart.png" class="cart" alt="Cart">
+                    <span id="cartCount">0</span>
+                </a>
+            </nav>
+        </header>
+    
+        <main class="cart-page">
+            <h1>MY CART</h1>
+    
+            <div id="cartItems"></div>
+    
+            <h2 class="cart-total">
+                TOTAL: <span id="total">₱0.00</span>
+            </h2>
+    
+            <div class="cart-buttons">
+                <button class="button" onclick="location.href='menu.html'">
+                    CONTINUE SHOPPING
+                </button>
+    
+                <button class="button" id="checkoutButton">
+                    CHECKOUT
+                </button>
+            </div>
+        </main>
+
+        <footer>
+            <h3>CAFE NOIR</h3>
+            <p>© 2026 Cafe Noir. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1QPphXe6Kz" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/noir_ndbean?obrf=Nm51czI0bm1wdG5o" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+        <script src="javaScipt/cart.js"></script>
+        <script src="javaScipt/cartCounter.js"></script>
+    </body>    
+ </html>

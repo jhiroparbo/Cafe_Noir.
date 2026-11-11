@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="images/png" href="images/icon.png">
+        <link rel="stylesheet" href="css/headerFooter.css">
+        <link rel="stylesheet" href="css/product.css">
+        <title>Product - Cafe Noir</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Cafe Noir Logo">
+                <div class="logo-text">
+                    <h1>CAFE NOIR</h1>
+                    <p>SIP THE DARK SIDE</p>
+                </div>
+            </div>
+
+            <nav>
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="login.html">LOGIN</a>
+                <a href="cart.html" class="cart-link">
+                    <img src="images/cart.png" class="cart" alt="Cart">
+                    <span id="cartCount">0</span>
+                </a>
+            </nav>
+        </header>
+    
+        <main>
+            <section class="product-details">
+                <img id="productImage" src="" alt="Product">
+    
+                <div class="details">
+                    <h1 id="productName"></h1>
+                    <h2 id="productPrice"></h2>
+                    <p id="productDescription"></p>
+    
+                    <label for="size">SIZE</label>
+                    <select id="size">
+                        <option value="16oz">16oz</option>
+                    </select>
+    
+                    <label>QUANTITY</label>
+                    <div class="quantity">
+                        <button type="button" id="minus">-</button>
+                        <span id="quantity">1</span>
+                        <button type="button" id="plus">+</button>
+                    </div>
+    
+                    <button class="button" id="addToCart">ADD TO CART</button>
+                    <button class="button" id="buyNow">BUY NOW</button>
+                    <button class="button" onclick="location.href='menu.html'">
+                        BACK TO MENU
+                    </button>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <h3>CAFE NOIR</h3>
+            <p>© 2026 Cafe Noir. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1QPphXe6Kz" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/noir_ndbean?obrf=Nm51czI0bm1wdG5o"  target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+        <script src="javaScipt/cartCounter.js"></script>
+        <script src="javaScipt/product.js"></script>
+    </body>
+</html>

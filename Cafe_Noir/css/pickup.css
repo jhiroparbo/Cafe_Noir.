@@ -1,0 +1,214 @@
+/* PICKUP PAGE */
+.pickup-page {
+    max-width: 550px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fffaf3;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.pickup-page h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    color: #4b3022;
+}
+
+.pickup-description {
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+    margin: 15px 0 25px;
+}
+
+/* PROGRESS INDICATOR */
+.pickup-page .progress-container {
+    max-width: 750px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.progress-step {
+    min-width: 65px;
+    text-align: center;
+}
+
+.step-circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #555;
+    border: none;
+    font-size: 14px;
+}
+
+.progress-step.completed .step-circle,
+.progress-step.active .step-circle {
+    background-color: #6f4e37;
+    color: white;
+}
+
+.progress-step p {
+    font-size: 11px;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.progress-step.active p {
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+.progress-line {
+    flex: 1;
+    height: 2px;
+    background-color: #ddd;
+    margin-top: -18px;
+}
+
+.progress-line.completed {
+    background-color: #6f4e37;
+}
+
+/* DATE AND TIME */
+.pickup-row {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.pickup-row label {
+    width: 100px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #4b3022;
+    box-sizing: border-box;
+}
+
+.pickup-row input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: none;
+    border-left: 1px solid #ccc;
+    outline: none;
+    background-color: white;
+}
+
+.pickup-row input:focus {
+    border-color: #6f4e37;
+}
+
+/* AVAILABLE TIME */
+.pickup-note {
+    text-align: center;
+    font-size: 13px;
+    color: #6f4e37;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* BUTTONS */
+.pickup-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.back-button,
+.pickup-page button {
+    width: 50%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button {
+    background-color: white;
+    color: #222;
+    border: 1px solid #333;
+}
+
+.pickup-page button {
+    background-color: #111;
+    color: white;
+    border: 1px solid #111;
+}
+
+.back-button:hover {
+    background-color: #eee;
+}
+
+.pickup-page button:hover {
+    background-color: #4b3022;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .pickup-page {
+        width: 95%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .pickup-page h1 {
+        font-size: 23px;
+    }
+
+    .pickup-page .progress-container {
+        padding: 0 5px;
+    }
+
+    .progress-step {
+        min-width: 48px;
+    }
+
+    .progress-step p {
+        font-size: 9px;
+    }
+
+    .step-circle {
+        width: 27px;
+        height: 27px;
+        line-height: 27px;
+    }
+
+    .pickup-row label {
+        width: 75px;
+        padding: 12px 5px;
+    }
+
+    .pickup-buttons {
+        gap: 15px;
+    }
+
+    .back-button,
+    .pickup-page button {
+        width: 50%;
+        height: 42px;
+    }
+}

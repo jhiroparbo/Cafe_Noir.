@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images/icon.png">
+        <link rel="stylesheet" href="css/headerFooter.css">
+        <link rel="stylesheet" href="css/payment.css">
+        <title>Payment - Cafe Noir</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Cafe Noir Logo">
+                <div class="logo-text">
+                    <h1>CAFE NOIR</h1>
+                    <p>SIP THE DARK SIDE</p>
+                </div>
+            </div>
+    
+            <nav>
+                <a href="home.html">HOME</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="login.html">LOGIN</a>
+                <a href="cart.html" class="cart-link">
+                    <img src="images/cart.png" class="cart" alt="Cart">
+                    <span id="cartCount">0</span>
+                </a>
+            </nav>
+        </header>
+    
+        <main class="payment-page">
+            <div class="progress-container">
+    
+                <div class="progress-step completed">
+                    <span>1</span>
+                    <p>Cart</p>
+                </div>
+    
+                <div class="progress-line completed"></div>
+    
+                <div class="progress-step completed">
+                    <span>2</span>
+                    <p>Checkout</p>
+                </div>
+    
+                <div class="progress-line completed"></div>
+    
+                <div class="progress-step completed">
+                    <span>3</span>
+                    <p>Pick-up</p>
+                </div>
+    
+                <div class="progress-line completed"></div>
+    
+                <div class="progress-step active">
+                    <span>4</span>
+                    <p>Payment</p>
+                </div>
+    
+                <div class="progress-line"></div>
+    
+                <div class="progress-step">
+                    <span>5</span>
+                    <p>Done</p>
+                </div>
+            </div>
+    
+            <h1>PAYMENT METHOD</h1>
+    
+            <div class="payment-content">
+                <div class="total-section">
+                    <h2>Order Total</h2>
+                    <h2 id="paymentTotal">₱0.00</h2>
+                </div>
+    
+                <div class="payment-section">
+                    <h2>Select Payment Method</h2>
+    
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" required>
+                        <option value="">Select Payment</option>
+                        <option value="Cash on Pickup">Cash on Pickup</option>
+                        <option value="GCash">GCash</option>
+                    </select>
+                </div>
+            </div>
+    
+            <form id="paymentForm">
+                <div class="payment-buttons">
+                    <a href="pickup.html" class="back-button">
+                        BACK
+                    </a>
+                    <button type="submit" class="continue-button">
+                        PLACE ORDER
+                    </button>
+                </div>
+            </form>
+        </main>
+    
+        <footer>
+            <h3>CAFE NOIR</h3>
+            <p>© 2026 Cafe Noir. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1QPphXe6Kz" target="_blank">
+                    <img src="images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/noir_ndbean?obrf=Nm51czI0bm1wdG5o" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+        <script src="javaScipt/payment.js"></script>
+        <script src="javaScipt/cartCounter.js"></script>
+    </body>
+</html>
